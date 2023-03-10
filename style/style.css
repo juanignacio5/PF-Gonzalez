@@ -1,0 +1,248 @@
+/*reset and in common*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fuente-carpeta;
+    src: url(../fonts/Cocogoose\ Pro\ Light-trial.ttf);
+}
+
+.whatsappFixed {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
+
+h3,
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,
+h2,
+h5 {
+    font-family: "Playfair Display";
+}
+
+h1,
+h2,
+h3,
+h5 {
+    color: wheat;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 40px;
+    background-color: #af3a11;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    background-color: #af3a11;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    color: rgb(180, 12, 12);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.whatsappFixed {
+    background-color: none;
+}
+
+/*body*/
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/*header*/
+.navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+a.nav-link {
+    color: #de4243 !important;
+}
+
+header nav {
+    font-family: "playfair display";
+    font-size: 2rem;
+    background-color: #00483a;
+}
+
+/*extra*/
+.extra {
+    width: 100%;
+    background-color: #003748;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Playfair Display";
+}
+
+.extra a:hover {
+    color: #de4243;
+}
+
+.extra a {
+    color: wheat;
+}
+
+/*footer*/
+footer {
+    display: grid;
+    flex-direction: column;
+}
+
+.logoFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.navFooter {
+    margin-top: 1rem;
+}
+
+.navFooter ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+.navFooter a {
+    font-size: 1.5rem;
+    color: #af3a11;
+}
+
+.navFooter a:hover {
+    color: #de4243;
+}
+
+.copyright {
+    background-color: #00483a;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.redesFooter {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.redesFooter img {
+    width: 60px;
+    height: 60px;
+}
+
+/*index*/
+.carousel img {
+    width: 100% !important;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.albums {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.albumsImg {
+    max-width: 20rem;
+}
+
+.iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.player,
+.fallback {
+    width: 0;
+    height: 0;
+}
+
+/*merch*/
+.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.col {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 18rem;
+    height: 36rem;
+    text-align: center;
+}
+
+/*media queries mobile first*/
+
+@media screen and (min-width:992px) {
+    footer {
+        display: grid;
+        grid-template-areas:
+            "navFooter logoFooter"
+            "navFooter redesFooter"
+            "copyright copyright";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .navFooter {
+        grid-area: navFooter;
+    }
+
+    .logoFooter {
+        grid-area: logoFooter;
+    }
+
+    .navFooter {
+        grid-area: navFooter;
+    }
+
+    .redesFooter {
+        grid-area: redesFooter;
+    }
+
+    .copyright {
+        grid-area: copyright;
+    }
+
+    .navFooter ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

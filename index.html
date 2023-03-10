@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <!-- LINK CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- STYLE LINK-->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <title>RCA Records</title>
+</head>
+
+<!--grid container-->
+
+<body>
+
+    <!--grid item header-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo-header.png"
+                        alt="logo-header"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/merch.html">Merch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--grid item carousel-->
+    <div class="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/carousel-one.jpg" class="d-block w-100" alt="carousel-one">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carousel-two.jpg" class="d-block w-100" alt="carousel-two">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carousel-three.jpg" class="d-block w-100" alt="carousel-three">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carousel-four.jpg" class="d-block w-100" alt="carousel-four">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--grid item new music-->
+    <div class="newMusic">
+        <h2>New Music</h2>
+        <section class="albums">
+            <article>
+                <a href="#">
+                    <img src="./assets/images/theStrokes-album.png" alt="theStrokes-album" class="albumsImg">
+                </a>
+                <h3>The Strokes - The New Abnormal</h3>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="./assets/images/davidBowie-album.png" alt="davidBowie-album" class="albumsImg">
+                </a>
+                <h3>David Bowie - Blackstar</h3>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="./assets/images/cageTheElephant-album.jpg" alt="cageTheElephant-album" class="albumsImg">
+                </a>
+                <h3>Cage the Elephant - Social Cues</h3>
+            </article>
+        </section>
+    </div>
+
+    <!--grid item videoclips-->
+    <div class="videoclips">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <h2>Videoclips</h2>
+                <div class="carousel-item active">
+                    <div class="video"><iframe class="iframe"
+                            src="https://player.vimeo.com/video/240041217?h=c49d1c9d91&title=0&byline=0&portrait=0"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <div class="carousel-item">
+                    <div class="video"><iframe class="iframe"
+                            src="https://player.vimeo.com/video/393033698?h=96d4c05f9b&title=0&byline=0&portrait=0"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>>
+                </div>
+                <div class="carousel-item">
+                    <div class="video"><iframe class="iframe"
+                            src="https://player.vimeo.com/video/364835879?h=9218cfef55&title=0&byline=0&portrait=0"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--grid item extra-->
+    <div class="extra">
+        <a href="#">Random Album</a>
+    </div>
+
+    <!--grid item footer-->
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="./pages/artists.html">Artists</a></li>
+                <li><a href="./pages/merch.html">Merch</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="logoFooter" href="#">
+            <img src="./assets/images/logo-footer.png" alt="logo-footer">
+        </a>
+        <ul class="redesFooter">
+            <li>
+                <a href="#"><img src="./assets/images/icon-spotify.svg" alt="spotify">
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="./assets/images/icon-youtube.svg" alt="youtube">
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="./assets/images/icon-instagram.svg" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="./assets/images/icon-facebook.svg" alt="facebook">
+                </a>
+            </li>
+        </ul>
+        <div class="copyright">
+            <h5>Todos los derechos reservados</h5>
+        </div>
+    </footer>
+
+    <div class="whatsappFixed">
+        <a href="#"><img src="./assets/images/whatsapp-icon.png" alt="whatsapp-icon"></a>
+    </div>
+</body>
+
+<!--JS Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</html>
