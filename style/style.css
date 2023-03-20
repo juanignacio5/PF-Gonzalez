@@ -16,7 +16,6 @@
     right: 50px;
 }
 
-.extra a,
 header a,
 h5 {
     font-family: 'Playfair Display';
@@ -73,6 +72,12 @@ h6 {
     font-family: 'Helvetica', sans-serif;
 }
 
+#extra {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
 /*body*/
 body {
     background-color: rgb(0, 0, 0);
@@ -96,23 +101,6 @@ header nav {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     background-color: #00483a;
-}
-
-/*extra*/
-.extra {
-    width: 100%;
-    background-color: #003748;
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Playfair Display";
-}
-
-.extra a:hover {
-    color: #de4243;
-}
-
-.extra a {
-    color: wheat;
 }
 
 /*footer*/
@@ -206,11 +194,6 @@ footer {
     color: black;
 }
 
-.btn {
-    border: 1px outset blue;
-    background-color: green;
-}
-
 .iframe {
     top: 0;
     left: 0;
@@ -224,13 +207,23 @@ footer {
     height: 0;
 }
 
-#indexButton{
-align-items: center;
+.iframe{
+    height: 30rem;
 }
+
+#indexButton {
+    align-items: center;
+}
+
 /*merch*/
 #merch {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+#merch .card {
+    background-color: black;
+    color: wheat;
 }
 
 #products {
@@ -244,29 +237,32 @@ align-items: center;
     text-align: center;
 }
 
-#artists img{
+#artists img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     margin: 1rem;
 }
 
- #artists h5{
-    text-align: center;
+#artistsBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
- .cardGroup{
+.cardGroup {
     display: flex;
     flex-wrap: wrap;
 }
 
-.cardGroup div{
+.cardGroup div {
     width: 30%;
     margin: 1rem;
 }
 
-.cardGroup .card-body{
-text-align: center;
+.cardGroup .card-body {
+    text-align: center;
 }
 
 /*media queries mobile first*/
@@ -275,11 +271,16 @@ text-align: center;
     footer {
         display: grid;
         grid-template-areas:
+            "extra     extra"
             "navFooter logoFooter"
             "navFooter redesFooter"
             "copyright copyright";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #extra {
+        grid-area: extra;
     }
 
     .navFooter {
@@ -288,10 +289,6 @@ text-align: center;
 
     .logoFooter {
         grid-area: logoFooter;
-    }
-
-    .navFooter {
-        grid-area: navFooter;
     }
 
     .redesFooter {
