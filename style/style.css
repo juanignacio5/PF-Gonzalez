@@ -140,6 +140,7 @@ footer {
 .navFooter a {
     font-size: 1.5rem;
     color: #af3a11;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .navFooter a:hover {
@@ -223,6 +224,9 @@ footer {
     height: 0;
 }
 
+#indexButton{
+align-items: center;
+}
 /*merch*/
 #merch {
     margin-top: 2rem;
@@ -238,6 +242,31 @@ footer {
 #cardMerch {
     width: 18rem;
     text-align: center;
+}
+
+#artists img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+ #artists h5{
+    text-align: center;
+}
+
+ .cardGroup{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardGroup div{
+    width: 30%;
+    margin: 1rem;
+}
+
+.cardGroup .card-body{
+text-align: center;
 }
 
 /*media queries mobile first*/
