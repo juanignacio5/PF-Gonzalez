@@ -12,20 +12,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
-    <!-- LINK CDN Bootstrap-->
+    <!-- BS CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- AOS CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- STYLE LINK-->
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
     <title>RCA Records Merch</title>
 </head>
 
-<!-- grid container -->
-
 <body>
 
-    <!-- grid item header -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -57,77 +56,76 @@
 
     <h1>MERCH</h1>
 
-    <!-- grid item merch-->
     <div class="container" id="merch">
         <div class="row">
             <div class="col" id="products">
-                <div class="card h-100 border-info" id="cardMerch">
+                <div class="card h-100" id="cardMerch">
                     <img src="../assets/images/monopoly-david-bowie.jpg" class="card-img-top" alt="monopoly-davidBowie">
                     <div class="card-body">
                         <h5 class="card-title">David Bowie's Monopoly</h5>
                         <p class="card-text">The classic boardgame with Bowie's touch</p>
                         <h6>$$$</h6>
-                        <a href="#" class="btn btn-primary">Buy</a>
+                        <a href="#" class="btn btn-primary" id="botonMerch">Buy</a>
                     </div>
                 </div>
 
             </div>
             <div class="col" id="products">
-                <div class="card h-100 border-info" id="cardMerch">
+                <div class="card h-100" id="cardMerch">
                     <img src="../assets/images/remera-1.png" class="card-img-top" alt="tshirt-theStrokes">
                     <div class="card-body">
                         <h5 class="card-title">The Strokes T-Shirt</h5>
                         <p class="card-text">The newest design from The New Abnormal album</p>
                         <h6>$$$</h6>
-                        <a href="#" class="btn btn-primary">Buy</a>
+                        <a href="#" class="btn btn-primary" id="botonMerch">Buy</a>
                     </div>
                 </div>
             </div>
 
             <div class="col" id="products">
-                <div class="card h-100 border-info" id="cardMerch">
+                <div class="card h-100" id="cardMerch">
                     <img src="../assets/images/theStrokes-album.png" class="card-img-top"
                         alt="theNewAbnormal-theStrokes">
                     <div class="card-body">
                         <h5 class="card-title">The New Abnormal</h5>
                         <p class="card-text">The Strokes newest album</p>
                         <h6>$$$</h6>
-                        <a href="#" class="btn btn-primary">Buy</a>
+                        <a href="#" class="btn btn-primary" id="botonMerch">Buy</a>
                     </div>
                 </div>
             </div>
             <div class="col" id="products">
-                <div class="card h-100 border-info" id="cardMerch">
+                <div class="card h-100" id="cardMerch">
                     <img src="../assets/images/strokes-discografia.png" class="card-img-top"
                         alt="discography-theStrokes">
                     <div class="card-body">
                         <h5 class="card-title">The Singles Volume 1</h5>
                         <p class="card-text">Complete singles from The Strokes in vinyl format</p>
                         <h6>$$$</h6>
-                        <a href="#" class="btn btn-primary">Buy</a>
+                        <a href="#" class="btn btn-primary" id="botonMerch">Buy</a>
                     </div>
                 </div>
             </div>
             <div class="col" id="products">
-                <div class="card h-100 border-info" id="cardMerch">
+                <div class="card h-100" id="cardMerch">
                     <img src="../assets/images/arethaFranklin-album.jpg" class="card-img-top"
                         alt="arethaFranklin-album">
                     <div class="card-body">
                         <h5 class="card-title">Aretha Now</h5>
                         <p class="card-text">Classic album from Aretha Franklin</p>
                         <h6>$$$</h6>
-                        <a href="#" class="btn btn-primary">Buy</a>
+                        <a href="#" class="btn btn-primary" id="botonMerch">Buy</a>
                     </div>
                 </div>
             </div>
             <div class="col" id="products">
-                <div class="card h-100 border-info" id="cardMerch">
+                <div class="card h-100" id="cardMerch">
                     <img src="../assets/images/dojaCat-album.png" class="card-img-top" alt="cageTheElephant-album">
                     <div class="card-body">
                         <h5 class="card-title">Hot Pink</h5>
                         <p class="card-text">Doja Cat's Album</p>
                         <h6>$$$</h6>
-                        <a href="#" class="btn btn-primary">Buy</a>
+                        <a href="#" class="btn btn-primary" id="botonMerch">Buy</a>
                     </div>
                 </div>
             </div>
@@ -135,11 +133,12 @@
     </div>
 
 
-    <!-- grid item footer -->
+
+    <div data-aos="fade-up" id="extra">
+        <button type="button" class="btn btn-outline-info">Go To outlet</button>
+    </div>
+
     <footer>
-        <div id="extra">
-            <button type="button" class="btn btn-outline-info">Go To outlet</button>
-        </div>
         <nav class="navFooter">
             <ul>
                 <li><a href="./artists.html">Artists</a></li>
@@ -188,5 +187,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+<!-- JS AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

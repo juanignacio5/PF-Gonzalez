@@ -12,9 +12,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
-    <!-- LINK CDN Bootstrap-->
+    <!-- BS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- AOS CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- STYLE LINK-->
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
@@ -57,62 +59,61 @@
             <h1>ABOUT</h1>
         </div>
 
-        <section>
-            <article id="about">
-                <h2>About 1</h2>
-
-                <div>
+        <section id="about">
+            <article>
+                <h2>History</h2>
+                <div data-aos="fade-left" class="info">
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet illum nisi dolore accusantium
-                        ea
-                        quam, hic id, voluptatem rerum esse aperiam doloremque consequatur dolorem possimus pariatur
-                        non
-                        vel ducimus porro.
+                        RCA Records is an American record label currently owned by Sony Music Entertainment, a
+                        subsidiary of Sony Corporation of America. It is one of Sony Music's four flagship labels,
+                        alongside RCA's former long-time rival Columbia Records; also Arista Records, and Epic
+                        Records.
+                        The label has released multiple genres of music, including pop, classical, rock, hip hop,
+                        afrobeat, electronic, R&B, blues, jazz, and country. Its name is derived from the initials
+                        of
+                        its defunct parent company, the Radio Corporation of America (RCA).
+                    </p>
+                    <img src="../assets/images/rca-victor.jpg" alt="about-1">
+                </div>
+            </article>
+            <article>
+                <h2>Who we are?</h2>
+                <div data-aos="fade-right" class="info">
+                    <img src="../assets/images/rca-new-logo.svg" alt="about-2">
+
+                    <p>
+                        The second oldest label in American history. It is home to some of the most iconic music artists
+                        of
+                        all-time. We are an American record label made up of a diverse and robust group of ambitious
+                        industry professions driven by a passion for music, artistry and creativity.
                     </p>
                 </div>
-
-                <img src="../images/480px-RCA_Records_logo_blanco.png" alt="about-1">
             </article>
 
             <article>
-                <h2>About 2</h2>
+                <h2>Human's Best Friend</h2>
+                <div data-aos="fade-left" class="info">
+                    <p>
+                        "His Master's Voice" origins lie in The Gramophone Company, who in 1899 bought the copyright to
+                        a
+                        painting by Francis Barraud. The painting shows a dog, Nipper, listening to his late master's
+                        voice
+                        emanating from a gramophone.
+                    </p>
 
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione autem quibusdam recusandae
-                    officiis nulla labore! Iure quis, distinctio animi sit obcaecati repudiandae fugiat rerum
-                    inventore, porro enim, doloremque voluptatem dolorum?
-                </p>
-
-                <img src="../images/640px-Victor_Needles_box_-_Museum_of_the_North_Beach_(cropped).jpg" alt="about-2">
-            </article>
-
-            <article>
-                <h2>About 3</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium iure officia deleniti
-                    vitae repudiandae odio, doloremque dolorem ratione reprehenderit. Laborum necessitatibus
-                    exercitationem soluta quis? Hic cumque consequuntur asperiores illo.
-                </p>
-
-                <img src="../images/Down_Yonder.jpg" alt="about-3">
+                    <img src="../assets/images/his-masters-voice.jpg" alt="about-3">
+                </div>
             </article>
 
         </section>
 
-        <div class="barraExtra">
-            <a href="">More Info</a>
-        </div>
-
-        <div class="fixed">
-            <a href="#">Back to Main</a>
-        </div>
     </main>
 
+    <div data-aos="fade-up" id="extra">
+        <button type="button" class="btn btn-outline-info">Learn More</button>
+    </div>
+
     <footer>
-        <div id="extra">
-            <button type="button" class="btn btn-outline-info">Learn More</button>
-        </div>
         <nav class="navFooter">
             <ul>
                 <li><a href="./artists.html">Artists</a></li>
@@ -160,5 +161,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
+<!-- JS AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
