@@ -385,7 +385,7 @@ input {
     display: grid;
     grid-template-areas: "extra     extra" "navFooter logoFooter" "navFooter redesFooter" "copyright copyright";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   #extra {
     grid-area: extra;
