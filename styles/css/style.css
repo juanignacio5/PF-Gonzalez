@@ -108,6 +108,7 @@ header a,
 h5,
 p {
   font-family: "Playfair Display";
+  color: wheat;
 }
 
 h1 {
@@ -404,6 +405,10 @@ input {
     flex-direction: column;
     align-items: center;
   }
+}
+/* bs styles */
+.btn-primary {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
