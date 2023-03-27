@@ -131,7 +131,10 @@ $orange: #af3a11;
     right: 50px;
 }
 
-header a,
+header a {
+    font-family: "Helvetica";
+}
+
 h5,
 p {
     font-family: 'Playfair Display';
@@ -219,10 +222,10 @@ header nav {
 footer {
     display: grid;
     flex-direction: column;
-    background-color: $green;
+    background-color: $primaryColor;
 
     .copyright {
-        background-color: $backgroundColor;
+        background-color: $green;
     }
 }
 
@@ -265,8 +268,8 @@ footer {
 
 .navFooter a {
     font-size: 1.5rem;
-    color: $orange;
-    font-family: 'Helvetica', sans-serif;
+    color: $red;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 .navFooter a:hover {
@@ -282,7 +285,7 @@ footer {
 
 .redesFooter {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 0;
     margin: 0;
     margin-bottom: 1rem;
