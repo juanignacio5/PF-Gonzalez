@@ -34,17 +34,15 @@
   width: 300px !important;
   height: 300px !important;
 }
-#cardMusic img #card-body {
+#cardMusic .card-body {
   margin: 1rem;
+  color: wheat;
 }
-#cardMusic img #card-body #card-title {
-  color: black;
-}
-#cardMusic img #card-body #card-title a {
+#cardMusic .card-body a {
   color: #af3a11;
   background-color: wheat;
 }
-#cardMusic img #card-body #card-title a:hover {
+#cardMusic .card-body a:hover {
   color: wheat;
   background-color: #af3a11;
 }
@@ -360,7 +358,6 @@ footer .copyright {
   justify-content: center;
 }
 #form form {
-  background-color: #00483a;
   margin: 10px;
 }
 #form form fieldset {

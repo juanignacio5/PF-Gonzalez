@@ -42,25 +42,22 @@ $orange: #af3a11;
     img {
         width: 300px !important;
         height: 300px !important;
+    }
 
-        #card-body {
-            margin: 1rem;
+    .card-body {
+        margin: 1rem;
+        color: $primaryColor;
 
-            #card-title {
-                color: black;
+        a {
+            color: $orange;
+            background-color: $primaryColor;
 
-                a {
-                    color: $orange;
-                    background-color: $primaryColor;
-
-                    &:hover {
-                        color: $primaryColor;
-                        background-color: $orange;
-                    }
-                }
-
+            &:hover {
+                color: $primaryColor;
+                background-color: $orange;
             }
         }
+
     }
 }
 
@@ -401,7 +398,6 @@ footer {
     justify-content: center;
 
     form {
-        background-color: $green;
         margin: 10px;
 
         fieldset {
