@@ -237,14 +237,14 @@ footer {
     justify-content: center;
 
     button {
-        background-color: $primaryColor;
-        color: $red;
+        background-color: $red;
+        color: $primaryColor;
         border: none;
         font-family: 'Playfair Display';
 
         &:hover {
-            background-color: $red;
-            color: $primaryColor;
+            background-color: $primaryColor;
+            color: $red;
             border: none;
         }
     }
@@ -253,6 +253,7 @@ footer {
 .logoFooter {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .navFooter {
@@ -264,6 +265,7 @@ footer {
     justify-content: space-evenly;
     padding: 0;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 .navFooter a {

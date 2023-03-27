@@ -209,20 +209,21 @@ footer .copyright {
   justify-content: center;
 }
 #extra button {
-  background-color: wheat;
-  color: #de4243;
+  background-color: #de4243;
+  color: wheat;
   border: none;
   font-family: "Playfair Display";
 }
 #extra button:hover {
-  background-color: #de4243;
-  color: wheat;
+  background-color: wheat;
+  color: #de4243;
   border: none;
 }
 
 .logoFooter {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .navFooter {
@@ -234,6 +235,7 @@ footer .copyright {
   justify-content: space-evenly;
   padding: 0;
   margin: 0;
+  margin-bottom: 1rem;
 }
 
 .navFooter a {
