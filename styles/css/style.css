@@ -332,23 +332,8 @@ footer .copyright {
   text-align: center;
 }
 
-/* contact */
-.gridContact {
-  display: grid;
-  grid-template-areas: "location contact" "form     form";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
 #location {
-  grid-area: location;
-}
-
-#contact {
-  grid-area: contact;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
