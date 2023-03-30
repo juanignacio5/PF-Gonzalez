@@ -93,14 +93,6 @@ $orange: #af3a11;
 
 #about {
 
-    @if (background-color)==black {
-        color: $primaryColor;
-    }
-
-    @else {
-        color: white;
-    }
-
     .info {
         display: flex;
         flex-direction: row;
