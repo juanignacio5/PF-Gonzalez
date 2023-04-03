@@ -56,86 +56,92 @@
         </nav>
     </header>
 
-    <div class="barraTitulo">
+    <main>
         <h1>CONTACT US</h1>
-    </div>
 
-    <!-- grid container -->
-    <div class="Contact">
-        <div class="locAndItems">
-            <!-- grid item location -->
-            <section id="location">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.511818893216!2d-86.790952181185!3d36.154098025718994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864669bbf8e2bd1%3A0x58996cad242caa06!2sRCA%20Records%20Label!5e0!3m2!1sen!2sar!4v1675890311897!5m2!1sen!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </section>
+        <!-- grid container -->
+        <div class="Contact">
+            <div class="locAndItems">
+                <!-- grid item location -->
+                <section id="location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.511818893216!2d-86.790952181185!3d36.154098025718994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864669bbf8e2bd1%3A0x58996cad242caa06!2sRCA%20Records%20Label!5e0!3m2!1sen!2sar!4v1675890311897!5m2!1sen!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
 
-            <aside id="icons">
-                <div>
-                    <img src="../assets/images/icon-map.png" alt="icon-map">
-                    <h3>1201 Demonbreun St, Nashville</h3>
-                </div>
+                <aside id="icons">
+                    <div>
+                        <img src="../assets/images/icon-map.png" alt="icon-map">
+                        <h3>1201 Demonbreun St, Nashville</h3>
+                    </div>
 
-                <div>
-                    <img src="../assets/images/icon-telephone.png" alt="icon-telephone">
-                    <h3>nick, our answering machine</h3>
-                </div>
+                    <div>
+                        <img src="../assets/images/icon-telephone.png" alt="icon-telephone">
+                        <h3>nick, our answering machine</h3>
+                    </div>
 
-                <div>
-                    <img src="../assets/images/icon-mail.png" alt="icon-email">
-                    <h3>rcarecords@rca.com</h3>
-                </div>
-            </aside>
+                    <div>
+                        <img src="../assets/images/icon-mail.png" alt="icon-email">
+                        <h3>rcarecords@rca.com</h3>
+                    </div>
+                </aside>
+            </div>
+
+            <form id="form">
+                <fieldset>
+                    <div><label for="nombre">First Name:</label>
+                        <input type="text" id="nombre">
+                    </div>
+
+                    <div><label for="apellido">Second Name:</label>
+                        <input type="text" id="apellido">
+                    </div>
+
+                    <div><label for="email">E-mail:</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="pais">Country</label>
+                        <select id="pais" name="pais" class="select-input">
+                            <option value>Select your Country</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="venezuela">Venezuela</option>
+                        </select>
+                    </div>
+
+                    <div><label for="newsletter">Subscribe to our newsletter?</label>
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                    </div>
+
+                    <div><label for="comentarios"><br>
+                            <textarea></textarea>
+                        </label>
+                    </div>
+
+                    <div><input type="reset" value="Clean form">
+                        <input type="submit" value="Join our mail list">
+                    </div>
+                </fieldset>
+            </form>
         </div>
 
-        <form id="form">
-            <fieldset>
-                <div><label for="nombre">First Name:</label>
-                    <input type="text" id="nombre">
-                </div>
+        <div data-aos="fade-up" id="extra">
+            <button type="button" class="btn btn-outline-info">Looking for a job?</button>
+        </div>
 
-                <div><label for="apellido">Second Name:</label>
-                    <input type="text" id="apellido">
-                </div>
+        <!-- whatsapp bottom right -->
+        <div class="whatsappFixed">
+            <a href="#"><img src="../assets/images/whatsapp-icon.png" alt="whatsapp"></a>
+        </div>
 
-                <div><label for="email">E-mail:</label>
-                    <input type="email" id="email">
-                </div>
-
-                <div>
-                    <label for="pais">Country</label>
-                    <select id="pais" name="pais" class="select-input">
-                        <option value>Select your Country</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="brasil">Brasil</option>
-                        <option value="chile">Chile</option>
-                        <option value="paraguay">Paraguay</option>
-                        <option value="uruguay">Uruguay</option>
-                        <option value="venezuela">Venezuela</option>
-                    </select>
-                </div>
-
-                <div><label for="newsletter">Subscribe to our newsletter?</label>
-                    <input type="checkbox" name="newsletter" id="newsletter">
-                </div>
-
-                <div><label for="comentarios"><br>
-                        <textarea></textarea>
-                    </label>
-                </div>
-
-                <div><input type="reset" value="Clean form">
-                    <input type="submit" value="Join our mail list">
-                </div>
-            </fieldset>
-        </form>
-    </div>
-
-    <div data-aos="fade-up" id="extra">
-        <button type="button" class="btn btn-outline-info">Looking for a job?</button>
-    </div>
+    </main>
 
     <footer>
         <nav class="navFooter">
@@ -175,10 +181,6 @@
         </div>
     </footer>
 
-    <!-- whatsapp bottom right -->
-    <div class="whatsappFixed">
-        <a href="#"><img src="../assets/images/whatsapp-icon.png" alt="whatsapp"></a>
-    </div>
 </body>
 
 <!--JS Bootstrap-->
