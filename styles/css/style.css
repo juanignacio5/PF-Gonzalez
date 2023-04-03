@@ -23,26 +23,30 @@
   margin: 1rem;
 }
 
-#cardMusic {
+.cardMusic {
   margin: 0 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-#cardMusic img {
+
+.cardMusic img {
   width: 300px !important;
   height: 300px !important;
 }
-#cardMusic .card-body {
+
+.cardMusic .card-body {
   margin: 1rem;
   color: wheat;
 }
-#cardMusic .card-body a {
+
+.cardMusic .card-body a {
   color: #af3a11;
   background-color: wheat;
 }
-#cardMusic .card-body a:hover {
+
+.cardMusic .card-body a:hover {
   color: wheat;
   background-color: #af3a11;
 }
@@ -69,6 +73,7 @@
   color: wheat;
   background-color: #de4243;
 }
+
 #artistsButton:hover {
   color: #de4243;
   background-color: wheat;
@@ -78,6 +83,7 @@
 #about {
   color: white;
 }
+
 #about .info {
   display: flex;
   flex-direction: row;
@@ -85,10 +91,12 @@
   align-items: center;
   margin: 50px 0;
 }
+
 #about .info img {
   min-width: 100px;
   max-width: 300px;
 }
+
 #about .info p {
   width: 50%;
   font-size: 1.5rem;
@@ -98,6 +106,7 @@
   font-family: fuente-carpeta;
   src: url(../fonts/Cocogoose\ Pro\ Light-trial.ttf);
 }
+
 .whatsappFixed {
   position: fixed;
   bottom: 20px;
@@ -197,6 +206,7 @@ footer {
   flex-direction: column;
   background-color: wheat;
 }
+
 footer .copyright {
   background-color: #00483a;
 }
@@ -208,12 +218,14 @@ footer .copyright {
   display: flex;
   justify-content: center;
 }
+
 #extra button {
   background-color: #de4243;
   color: wheat;
   border: none;
   font-family: "Playfair Display";
 }
+
 #extra button:hover {
   background-color: wheat;
   color: #de4243;
@@ -285,6 +297,7 @@ footer .copyright {
   color: wheat;
   background-color: #af3a11;
 }
+
 #botonMerch:hover {
   color: #af3a11;
   background-color: wheat;
@@ -307,6 +320,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
+
 #artistsBox img {
   width: 300px;
   height: 300px;
@@ -314,6 +328,7 @@ footer .copyright {
   margin: 1rem;
   transition: all 2s;
 }
+
 #artistsBox img:hover {
   transform: scale(1.5, 1.5);
 }
@@ -348,9 +363,11 @@ footer .copyright {
   align-items: center;
   justify-content: center;
 }
+
 #form form {
   margin: 10px;
 }
+
 #form form fieldset {
   display: flex;
   flex-direction: column;
@@ -375,27 +392,34 @@ input {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
+
   #extra {
     grid-area: extra;
   }
+
   .navFooter {
     grid-area: navFooter;
   }
+
   .logoFooter {
     grid-area: logoFooter;
   }
+
   .redesFooter {
     grid-area: redesFooter;
   }
+
   .copyright {
     grid-area: copyright;
   }
+
   .navFooter ul {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
+
 /* bs styles */
 .btn-primary {
   border: none;
